@@ -1,10 +1,10 @@
 import pandas as pd
 import plotly.express as px
-import straemlit as st
+import streamlit as st
 
 car_data = pd.read_csv('vehicles_us.csv') # leer los datos
-hist_checkbox = st.button('Construir histograma')
-disp_checkbox = st.button('Construir grafico de dispersion')
+hist_checkbox = st.checkbox('Construir histograma')
+disp_checkbox = st.checkbox('Construir grafico de dispersion')
 
 # Checkbox histograma
 if hist_checkbox: 
